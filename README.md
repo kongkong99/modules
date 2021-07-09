@@ -1,6 +1,6 @@
 ## 关于必须删除node_modules包在npm i才可以 正常运行的一种论证
 
-### 复现步骤
+### 三个文件夹介绍
 1. main项目为平时开发的主项目，其中会依赖module1和module2  
 ```js
 require('@zwhkk/module1')
@@ -17,7 +17,7 @@ require('@zwhkk/module2')
 console.log('module1中打印global.module2: ', global.module2)
 console.log('module1中打印global.module2(): ', global.module2())
 ```
-
+### 复现步骤
 ```bash
 # 查看node_modules中依赖包关系
 npm ls
