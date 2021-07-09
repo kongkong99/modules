@@ -2,6 +2,9 @@
 
 ### 复现步骤
 1. main项目为平时开发的主项目，其中会依赖module1和module2
+```js
+require('@zwhkk/module1')
+```
 
 2. module2
 module2@2.0.0中 global.module2 = 'variable module2, v2.0.0'
