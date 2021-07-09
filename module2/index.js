@@ -1,0 +1,1 @@
+global.module2 = () =>  'function module2, v2.0.1'
