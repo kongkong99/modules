@@ -1,16 +1,16 @@
 ## 关于必须删除node_modules包在npm i才可以 正常运行的一种论证
 
 ### 复现步骤
-1. main项目为平时开发的主项目，其中会依赖module1和module2
+1. main项目为平时开发的主项目，其中会依赖module1和module2  
 ```js
 require('@zwhkk/module1')
 ```
 
-2. module2
+2. module2  
 module2@2.0.0中 global.module2 = 'variable module2, v2.0.0'
 module2@2.0.1中 global.module2 = () =>  'function module2, v2.0.1'
 
-3. module1
+3. module1  
 ```js
 require('@zwhkk/module2')
 
